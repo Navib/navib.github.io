@@ -1,0 +1,44 @@
+@import '../../../styles/_variables.scss';
+
+.slideOutBody {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: $p4Color;
+  overflow-x: scroll;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-100%);
+  overflow: hidden;
+  z-index: 99;
+}
+
+.slideOutBody.noWidth {
+  transform: translateX(0);
+}
+
+.slideOutButton {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+}
+
+.exitButton {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+@media print, screen and (min-width: 40em) {
+  .slideOutBody {
+    width: 16.66667%;
+  }
+}
+
+@media print, screen and (max-width: 39em) {
+  .slideOutBody {
+    width: 100%;
+  }
+}

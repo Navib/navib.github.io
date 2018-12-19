@@ -1,0 +1,19 @@
+@import '../../../styles/_variables.scss';
+
+
+.jumbotronBase {
+  background: $p4Color;
+  padding: 1rem 2rem 2rem;
+}
+
+.roundedCorners {
+  border-radius: 4px
+}
+
+.horizontalRule {
+  height: 0px;
+  overflow: visible;
+  background: #000;
+  border-style: solid;
+  border-width: .5px;
+}

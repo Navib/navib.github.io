@@ -1,0 +1,40 @@
+@import '../../../../styles/_variables.scss';
+
+.listGroupItem:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.listGroupItem:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.listGroupItem {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.flushItem:first-child {
+  border-top: 0;
+}
+
+.flushItem:last-child {
+  border-bottom: 0;
+}
+
+.flushItem {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.activeItem {
+  background: $p3Color !important;
+  color: $primaryColor !important;
+}

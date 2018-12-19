@@ -1,0 +1,12 @@
+@import '../../../styles/_variables.scss';
+
+.anchorBase {
+  color: $primaryColor;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.anchorBase:hover {
+  text-decoration: none;
+}
